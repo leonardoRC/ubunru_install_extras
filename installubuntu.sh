@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 add-apt-repository ppa:webupd8team/java -y      # java oracle
 echo deb http://archive.canonical.com/ubuntu $(lsb_release -cs) partner >> /etc/apt/sources.list   #extras
 echo deb-src http://archive.canonical.com/ubuntu $(lsb_release -cs) partner >> /etc/apt/sources.list
@@ -36,4 +37,10 @@ chattr +i /home/necrodin/.local/share/recently-used.xbel
 
 apt-get remove -y transmission-gtk transmission-common transmission-cli  transmission-qt transmission transmission-daemon
 apt-get install -y deluge playonlinux wine
-apt-get dist-upgrade -y
+
+##install pycharm
+
+snap install pycharm-professional --classic
+
+
+apt autoremove -y

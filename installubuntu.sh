@@ -2,7 +2,7 @@
 add-apt-repository ppa:webupd8team/java -y      # java oracle
 echo deb http://archive.canonical.com/ubuntu $(lsb_release -cs) partner >> /etc/apt/sources.list   #extras
 echo deb-src http://archive.canonical.com/ubuntu $(lsb_release -cs) partner >> /etc/apt/sources.list
-echo deb http://download.virtualbox.org/virtualbox/debian saucy contrib >> /etc/apt/sources.list   #Vbox
+echo deb http://download.virtualbox.org/virtualbox/debian Xenial contrib >> /etc/apt/sources.list   #Vbox
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 
 apt-get update
@@ -11,8 +11,7 @@ apt-get install oracle-java8-installer -y
 apt-get install unity-tweak-tool compizconfig-settings-manager -y
 apt-get install p7zip p7zip-full p7zip-rar lzma lzma-dev -y  ##instalar 7zip com suporte a rar
 apt-get install flashplugin-installer flashplugin-nonfree-extrasound -y ## instala flash proprietario
-apt-get install mozilla-plugin* vlc -y ##plugins do mozzila ( instala vlc e plugins de reprodução)
-apt-get install ubuntu-restricted-extras skype -y  ##Ubuntu-Restricted-Extras, Skype e Google Chrome
+apt-get install ubuntu-restricted-extras -y  ##Ubuntu-Restricted-Extras, Skype e Google Chrome
 ###### compiladores e afins
 apt-get install -y build-essential git git-svn
 
@@ -22,10 +21,10 @@ apt-get install conky-all conky curl lm-sensors -y
 cp -arvf temas/* /usr/share/themes/
 ####adicionar na inicialização de seção:
 ##/home/necrodin/.conky/conky-startup.sh
-cp -arvf .conky/ /home/necrodin/
+cp -arvf .conky/ ~/
 ### retirar itens recentes
-chattr +i /home/necrodin/.local/share/recently-used.xbel
-apt-get install -y deluge virtualbox-5.2
+chattr +i ~/.local/share/recently-used.xbel
+apt-get install -y deluge virtualbox-5.2 virtualbox-4.2
 
 ##install pycharm
 snap install pycharm-professional --classic

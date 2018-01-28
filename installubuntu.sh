@@ -2,8 +2,8 @@
 add-apt-repository ppa:webupd8team/java -y      # java oracle
 echo deb http://archive.canonical.com/ubuntu $(lsb_release -cs) partner >> /etc/apt/sources.list   #extras
 echo deb-src http://archive.canonical.com/ubuntu $(lsb_release -cs) partner >> /etc/apt/sources.list
-echo deb http://download.virtualbox.org/virtualbox/debian Xenial contrib >> /etc/apt/sources.list   #Vbox
-wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+echo deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib >> /etc/apt/sources.list   #Vbox
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 
 apt-get update
 apt-get install vim ssh wget cifs-utils synaptic -y
@@ -24,7 +24,7 @@ cp -arvf temas/* /usr/share/themes/
 cp -arvf .conky/ ~/
 ### retirar itens recentes
 chattr +i ~/.local/share/recently-used.xbel
-apt-get install -y deluge virtualbox-5.2 virtualbox-4.2
+apt-get install -y deluge virtualbox-5.2
 
 ##install pycharm
 snap install pycharm-professional --classic

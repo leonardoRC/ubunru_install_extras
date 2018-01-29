@@ -12,12 +12,13 @@ apt-get install unity-tweak-tool compizconfig-settings-manager -y
 apt-get install p7zip p7zip-full p7zip-rar lzma lzma-dev -y  ##instalar 7zip com suporte a rar
 apt-get install flashplugin-installer flashplugin-nonfree-extrasound -y ## instala flash proprietario
 apt-get install ubuntu-restricted-extras -y  ##Ubuntu-Restricted-Extras, Skype e Google Chrome
-###### compiladores e afins
+###### python e afins
 apt-get install -y build-essential git git-svn
 apt-get install python-setuptools python-dev build-essential -y
 easy_install pip
 pip install virtualenv
-
+pip install --upgrade pip
+pip install django
 ###### gadget monitoramento
 apt-get install conky-all conky curl lm-sensors -y
 #### instalar tema black

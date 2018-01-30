@@ -14,11 +14,10 @@ apt-get install flashplugin-installer flashplugin-nonfree-extrasound -y ## insta
 apt-get install ubuntu-restricted-extras -y  ##Ubuntu-Restricted-Extras, Skype e Google Chrome
 ###### python e afins
 apt-get install -y build-essential git git-svn
-apt-get install python-setuptools python-dev build-essential -y
-easy_install pip
-pip install virtualenv
-pip install --upgrade pip
-pip install django
+apt-get install python3-setuptools python3-dev python3-pip -y
+pip3 install virtualenv
+pip3 install --upgrade pip
+pip3 install django
 ###### gadget monitoramento
 apt-get install conky-all conky curl lm-sensors -y
 #### instalar tema black

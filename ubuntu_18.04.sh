@@ -46,7 +46,9 @@ apt autoremove -y
 # Coverflow Alt-Tab
 # TopIcons Plus
 # Sound Input & Output Device Chooser
+# Frippery Move Clock
 
 
-### theme
+### theme /usr/share/themes
 # https://www.gnome-look.org/p/1191004/
+# https://www.gnome-look.org/p/1174686/

@@ -16,7 +16,7 @@ apt-get update
 apt-get install oracle-java8-installer oracle-java8-set-default -y                    # java oracle
 apt install ubuntu-restricted-extras -y
 apt-get install virtualbox-5.2 -y
-apt-get install gnome-tweak-tool -y
+apt-get install gnome-tweak-tool chrome-gnome-shell gnome-shell-extensions -y
 apt-get install vim ssh wget cifs-utils  -y
 apt-get install p7zip p7zip-full p7zip-rar lzma lzma-dev -y  ##instalar 7zip com suporte a rar
 apt-get install flashplugin-installer -y ## instala flash proprietario
@@ -24,13 +24,29 @@ apt-get install flashplugin-installer -y ## instala flash proprietario
 ## work
 apt-get install -y build-essential libssl-dev libffi-dev python-dev git git-svn  python-pip
 apt-get install python3-setuptools python3-dev python3-pip -y
-apt-get install postgresql libpq-dev postgresql-client postgresql-client-common pgadmin3
+apt-get install postgresql libpq-dev postgresql-client postgresql-client-common pgadmin3 -y
 pip3 install virtualenv
-pip3 install --upgrade pip
 pip3 install django
 pip3 install psycopg2
+pip3 install --upgrade pip
 snap install pycharm-professional --classic
 
 ### geral upgrades
 apt-get upgrade -y
 apt autoremove -y
+
+
+
+### extensions
+# No Title Bar
+# places
+# clipboard-indicator
+# Caffeine
+# Refresh Wifi Connections
+# Coverflow Alt-Tab
+# TopIcons Plus
+# Sound Input & Output Device Chooser
+
+
+### theme
+# https://www.gnome-look.org/p/1191004/
